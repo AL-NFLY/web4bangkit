@@ -1,0 +1,363 @@
+@font-face {
+    font-family: postgrotesk-book;
+    src: url("PostGrotesk-Book.woff2") format("woff2");
+    font-style: normal
+}
+
+@font-face {
+    font-family: postgrotesk-medium;
+    src: url("PostGrotesk-Medium.woff2") format("woff2");
+    font-style: normal
+}
+
+@font-face {
+    font-family: bauerbodoni;
+    src: url("BauerBodoni.woff2") format("woff2");
+    font-style: normal
+}
+
+*{
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: postgrotesk-medium, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: inline;
+ }
+ 
+.jumbotron{
+    background-color: rgb(7, 6, 11);
+    color: white;
+}
+
+nav{
+    background-color: rgb(193, 140, 65);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+
+}
+
+nav li{
+    display: inline;
+    list-style: none;
+    color: rgb(193, 140, 65);
+    margin: 75px;
+}
+
+nav a:hover{
+    color:white;
+    font-weight: 800;
+}
+
+header h1{
+    color: white;
+}
+header .logo{
+    width: 200px; 
+}
+
+h2{
+    font-family: bauerbodoni, sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: rgb(193, 140, 65);
+    
+}
+
+
+
+
+#desc div{
+    font-family: bauerbodoni, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 100px 175px;
+    
+}
+
+
+
+.mainImage{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: center; 
+    padding: 0;
+    margin: 0;
+    outline-style: double;
+    outline-color: rgb(193, 140, 65);
+}
+
+article p{
+    padding: 0 200px;
+
+    line-height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* Properti lainnya */
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.box {
+    flex-grow: 1;
+    /* properti lainnya */
+    width: 400px;
+}
+
+.box:hover{
+    background-color:rgba(193, 140, 65, 0.1) ;
+    border-radius: 5px;
+}
+.box img{
+    object-fit:contain;
+}
+
+#aboutUs{
+display: block;
+
+}
+footer{
+    padding: 20px;;
+    color: black;
+    background-color: rgba(193, 140, 65, 0.1);
+    text-align: center;
+    font-weight: lighter;
+    font-family: postgrotesk-medium, sans-serif ;
+
+}
+
+.card{
+    outline-style: double;
+    outline-color: rgb(193, 140, 65);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+#aboutUs .container{
+    background-color: rgba(193, 140, 65, 0.1);
+    
+}
+.container table{
+    border: 10px;
+    border-radius: 10px;
+    border-width: 10px;
+    text-align: justify;
+    line-height: normal;
+}
+
+#profilePic{
+    max-width: 40%;
+}
+
+.ratingButton {
+    display: block;
+    width: 15%;
+    padding: 10px;
+    background: rgba(193, 140, 65, 0.9);
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    display: table-column;
+  }
+
+/*Picture Animation*/
+#boxMenOneRep{
+    display: none;
+}
+#boxMenOneDiv:hover #boxMenOne {
+    display: none;
+}
+#boxMenOneDiv:hover #boxMenOneRep {
+    display: inline;
+}
+
+#boxMenTwoRep{
+    display: none;
+}
+#boxMenTwoDiv:hover #boxMenTwo{
+    display: none;
+}
+#boxMenTwoDiv:hover #boxMenTwoRep{
+    display: inline;
+}
+
+#boxMenThreeRep{
+    display: none;
+}
+#boxMenThreeDiv:hover #boxMenThree{
+    display: none;
+}
+#boxMenThreeDiv:hover #boxMenThreeRep{
+    display: inline;
+}
+
+#boxFemOneRep{
+    display: none;
+}
+#boxFemOneDiv:hover #boxFemOne {
+    display: none;
+}
+#boxFemOneDiv:hover #boxFemOneRep {
+    display: inline;
+}
+
+#boxFemTwoRep{
+    display: none;
+}
+#boxFemTwoDiv:hover #boxFemTwo {
+    display: none;
+}
+#boxFemTwoDiv:hover #boxFemTwoRep {
+    display: inline;
+}
+
+#boxFemThreeRep{
+    display: none;
+}
+#boxFemThreeDiv:hover #boxFemThree{
+    display: none;
+}
+#boxFemThreeDiv:hover #boxFemThreeRep{
+    display: inline;
+}
+
+#boxUniOneRep{
+    display: none;
+}
+#boxUniOneDiv:hover #boxUniOne {
+    display: none;
+}
+#boxUniOneDiv:hover #boxUniOneRep {
+    display: inline;
+}
+
+#boxUniTwoRep{
+    display: none;
+}
+#boxUniTwoDiv:hover #boxUniTwo {
+    display: none;
+}
+#boxUniTwoDiv:hover #boxUniTwoRep {
+    display: inline;
+}
+
+#boxUniThreeRep{
+    display: none;
+}
+#boxUniThreeDiv:hover #boxUniThree{
+    display: none;
+}
+#boxUniThreeDiv:hover #boxUniThreeRep{
+    display: inline;
+}
+
+
+
+/*Media Compability*/
+@media screen and (max-width: 768px) {
+
+    div,
+    p{
+        padding: 6px!important;
+        font-size: 15px!important;
+        line-height: normal!important;  
+    }
+
+    .logo{
+        width: 100%;
+        max-width: 200px;
+    }
+    nav{
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul {
+        padding: 0px;
+        margin: 0px;
+        
+    }
+    nav a,
+    nav a:hover{
+        display:block;
+        font-weight: 400; 
+        font-size: 13px;
+        line-height: 0;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        text-align: justify;
+        font-family: postgrotesk-book, sans-serif;
+        font-size: 12px!important;
+        font-weight: 100;
+    }
+    #desc div{
+        margin: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .container img{
+        width: 250px!important;
+    }
+
+    .card{
+        width: auto;
+        
+    }
+
+    .card th{
+        color: rgb(193, 140, 65);
+        font-size: small;
+    }
+
+    .card td{
+        font-size: smaller;
+    }
+
+    .ratingButton{
+        width: auto;
+        font-size: x-small;
+    }
+    
+    footer{
+        padding: 2px;
+    }
+    footer p{
+        text-align: center;
+    }
+ }
